@@ -1,95 +1,81 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client";
+import styles from './page.module.css';
+import { AiFillGithub, AiFillLinkedin, AiOutlineFilePdf, AiOutlineDown } from "react-icons/ai";
+import { FaReact, FaNodeJs } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiTypescript } from "react-icons/si";
+import { useEffect, useState } from 'react';
+import Projects from './components/projectsContainer/Projects';
+
+const languages = ['REACTJS', 'NEXTJS', 'JAVASCRIPT', 'NODEJS', 'TYPESCRIPT'];
 
 export default function Home() {
+
+  const fillIcon = '#c59ae3';
+  const sizeIcon = 70
+
+  const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentLanguageIndex((prevIndex) => (prevIndex + 1) % languages.length);
+
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [currentLanguageIndex]);
+
+  const currentLanguage = languages[currentLanguageIndex];
+
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <main className={styles.main}>
+        <div className={styles.introContainer}>
+          <p className={styles.meetingText}>OI, ✌️ EU SOU O FILIPE</p>
+          <h1 className={styles.title}>
+            <div className={styles.reactLine}>
+              REACT
+              <ul className={styles.linkContainer}>
+                <li>
+                  <a href='https://github.com/FilipeSall' target='_blank'>
+                    <AiFillGithub fill={fillIcon} size={sizeIcon} />
+                  </a>
+                </li>
+                <li>
+                  <a href='https://www.linkedin.com/in/filipe-salles-69aa38163/' target='_blank'>
+                    <AiFillLinkedin fill={fillIcon} size={sizeIcon} />
+                  </a>
+                </li>
+                <li>
+                  <a href='/resume.pdf' download>
+                    <AiOutlineFilePdf fill={fillIcon} size={sizeIcon} />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <br />
+            DEVELOPER</h1>
+          <p className={styles.leavingText}>EU SEI PROGRAMAR EM <span>
+            {currentLanguage === 'REACTJS' ? (
+              <FaReact className={styles.changing_word} fill='#61dafb' size={30} />
+            ) : currentLanguage === 'NEXTJS' ? (
+              <TbBrandNextjs fill='#000000' className={styles.changing_word} size={30} />
+            ) : currentLanguage === 'JAVASCRIPT' ? (
+              <IoLogoJavascript fill='#f7df1e' className={styles.changing_word} size={30} />
+            ) : currentLanguage === 'NODEJS' ? (
+              <FaNodeJs fill='#339933' className={styles.changing_word} size={30} />
+            ) : currentLanguage === 'TYPESCRIPT' && (
+              <SiTypescript fill='#3178C6' className={styles.changing_word} size={30} />
+            )}
+          </span></p>
+          <a href='#projects' className={styles.nextBtn}><AiOutlineDown fill={'#c31432'} /></a>
         </div>
+      </main>
+      <div className={styles.projectsContainer}>
+        <Projects />
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   )
 }
