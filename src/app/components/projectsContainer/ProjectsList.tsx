@@ -5,18 +5,18 @@ import initialPhoto from '../../../../public/linktaskweather/initialphoto.webp'
 
 import initialPhotoOpus from '../../../../public/opusproject/initialPhoto.webp';
 import googleStatusImgOpus from '../../../../public/opusproject/googleStatusImg.webp';
-import opusimg1 from '../../../../public/opusproject/opusimg1.webp';
-import opusimg2 from '../../../../public/opusproject/opusimg2.webp';
-import opusimg3 from '../../../../public/opusproject/opusimg3.webp';
-import opusimg4 from '../../../../public/opusproject/opusimg4.webp';
-import opusimg5 from '../../../../public/opusproject/opusimg5.webp';
+import opusimg11 from '../../../../public/opusproject/opusimg1.webp';
+import opusimg22 from '../../../../public/opusproject/opusimg2.webp';
+import opusimg33 from '../../../../public/opusproject/opusimg3.webp';
+import opusimg44 from '../../../../public/opusproject/opusimg4.webp';
+import opusimg55 from '../../../../public/opusproject/opusimg5.webp';
 
 import initialPhotoQuizz from '../../../../public/quizzgame/initialPoto.webp';
 import googleStatusImgQuizzgame from '../../../../public/quizzgame/googleStatusImg.webp';
-import quizzgameimg11 from '../../../../public/quizzgame/quizzgameimg1.webp';
-import quizzgameimg22 from '../../../../public/quizzgame/quizzgameimg2.webp';
-import quizzgameimg33 from '../../../../public/quizzgame/quizzgameimg3.webp';
-import quizzgameimg44 from '../../../../public/quizzgame/quizzgameimg4.webp';
+import quizzgameimg1 from '../../../../public/quizzgame/quizzgameimg1.webp';
+import quizzgameimg2 from '../../../../public/quizzgame/quizzgameimg2.webp';
+import quizzgameimg3 from '../../../../public/quizzgame/quizzgameimg3.webp';
+import quizzgameimg4 from '../../../../public/quizzgame/quizzgameimg4.webp';
 
 import initialPhotoKhoder from '../../../../public/khodercart/initialPhoto.webp';
 import googleStatusImgKhoder from '../../../../public/khodercart/googleStatusKhoderImg.webp';
@@ -53,7 +53,7 @@ const projects = [
     netlifyPath:'https://opus-project.netlify.app/',
     inConstruction:false,
     googleStatusImg:googleStatusImgOpus, 
-    photos:[opusimg1, opusimg2, opusimg3, opusimg4, opusimg5]
+    photos:[opusimg11, opusimg22, opusimg33, opusimg44, opusimg55]
   },
   {
     title:'New Khoder cart menu',
@@ -77,7 +77,7 @@ const projects = [
     titlePath:'https://quizzgame.vercel.app/',
     gitHubPath:'https://github.com/FilipeSall/Quizzgame',
     netlifyPath:'https://tentegabaritar.netlify.app/',
-    photos:[quizzgameimg11, quizzgameimg22, quizzgameimg33, quizzgameimg44],
+    photos:[quizzgameimg1, quizzgameimg2, quizzgameimg3, quizzgameimg4],
   },
   {
     title:'Button generator',
