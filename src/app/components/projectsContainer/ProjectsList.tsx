@@ -6,7 +6,7 @@ import initialPhoto from '../../../../public/linktaskweather/initialphoto.webp'
 import initialPhotoOpus from '../../../../public/opusproject/initialPhoto.webp';
 import googleStatusImgOpus from '../../../../public/opusproject/googleStatusImg.webp';
 import opusimg1 from '../../../../public/opusproject/opusImg1.webp';
-import opusimg2 from '../../../../public/opusproject/opusImg2.webp';
+import opusimg2 from '../../../../public/opusproject/opusimg2.webp';
 import opusimg3 from '../../../../public/opusproject/opusImg3.webp';
 import opusimg4 from '../../../../public/opusproject/opusImg4.webp';
 import opusimg5 from '../../../../public/opusproject/opusImg5.webp';
@@ -52,8 +52,8 @@ const projects = [
     gitHubPath:'https://github.com/FilipeSall/Opus',
     netlifyPath:'https://opus-project.netlify.app/',
     inConstruction:false,
-    googleStatusImg:googleStatusImgOpus,
-    photos:[opusimg1, opusimg2, opusimg3, opusimg4, opusimg5]
+    googleStatusImg:googleStatusImgOpus, 
+    photos:[opusimg1, opusimg2]
   },
   {
     title:'New Khoder cart menu',
