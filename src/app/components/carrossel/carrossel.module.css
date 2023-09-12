@@ -1,0 +1,23 @@
+.carrosselContainer {
+    min-width: 150%;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    cursor: grab;
+}
+
+.inner{
+   display: flex;
+   cursor: grab;
+}
+
+.photo {
+    object-fit: contain;
+    width: max-content;
+    height: 40vh;
+    pointer-events: none;
+    border-radius: 12px;
+    cursor: grab;
+    box-shadow: 1px 1px 5px grey;
+}

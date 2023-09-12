@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './ProjectBox.module.css';
 import Image, { StaticImageData } from 'next/image';
-import { motion } from 'framer-motion';
 import ProjectModal from '../projectModal/ProjectModal';
 
 interface PropsTypes {
@@ -15,9 +14,10 @@ interface PropsTypes {
   netlifyPath?: string,
   text?: string,
   inConstruction?:boolean,
+  googleStatusImg?:StaticImageData,
 }
 
-function ProjectBox({ title, photos, isClientReal, titlePath, gitHubPath, netlifyPath, initialPhoto,text, inConstruction }: PropsTypes) {
+function ProjectBox({ title, photos, isClientReal, titlePath, gitHubPath, netlifyPath, initialPhoto,text, inConstruction, googleStatusImg }: PropsTypes) {
 
   const [modal, setModal] = useState(false);
 
@@ -38,7 +38,9 @@ function ProjectBox({ title, photos, isClientReal, titlePath, gitHubPath, netlif
         gitHubPath={gitHubPath}
         netlifyPath={netlifyPath}
         text={text}
-        inConstrutction={inConstruction}
+        inConstruction={inConstruction}
+        photos={photos}
+        googleStatusImg={googleStatusImg}
       />}
     </>
   )
