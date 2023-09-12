@@ -53,7 +53,7 @@ const projects = [
     netlifyPath:'https://opus-project.netlify.app/',
     inConstruction:false,
     googleStatusImg:googleStatusImgOpus, 
-    photos:[opusimg1, opusimg2, opusimg3, opusimg4, opusimg5]
+    photos:[opusimg1, opusimg2,]
   },
   {
     title:'New Khoder cart menu',
