@@ -2,6 +2,8 @@
     width: 95%;
     height: fit-content;
     position: absolute;
+    left: 1%;
+    top: 5%;
     background-color: #fefefe;
     z-index: 50;
     border-radius: 8px;
@@ -129,4 +131,43 @@
     margin-left: 12px;
     object-fit: contain;
     height: 30vh;
+}
+
+@media screen and (max-width:650px) {
+    .container{
+        width: 95%;
+        height: max-content;
+        top: 0;
+        background-color: #fefefe;
+        left: 0;
+    }
+    .closeBtn{
+        left: 45%;
+        top: 0%;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .iconTitleContainer{
+        margin-top: -20px;
+    }
+    .containerTextWrapper{
+        flex-direction: column;
+    }
+    .text{
+        width: 80%;
+        font-size: 1rem;
+    }
+    .inConstructionIconWrapper{
+        width: 75%;
+    }
+
+    .underConstructionIconText{
+        font-size: 1.2rem;
+    }
+    .googleStatusImg{
+        width: 75%;
+    }
 }

@@ -13,12 +13,11 @@ interface PropsTypes {
   gitHubPath?: string,
   netlifyPath?: string,
   text?: string,
-  inConstruction?:boolean,
-  googleStatusImg?:StaticImageData,
+  inConstruction?: boolean,
+  googleStatusImg?: StaticImageData,
 }
 
-function ProjectBox({ title, photos, isClientReal, titlePath, gitHubPath, netlifyPath, initialPhoto,text, inConstruction, googleStatusImg }: PropsTypes) {
-
+function ProjectBox({ title, photos, isClientReal, titlePath, gitHubPath, netlifyPath, initialPhoto, text, inConstruction, googleStatusImg }: PropsTypes) {
   const [modal, setModal] = useState(false);
 
   function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
@@ -31,19 +30,25 @@ function ProjectBox({ title, photos, isClientReal, titlePath, gitHubPath, netlif
         <Image className={styles.projectBtn} src={initialPhoto} alt={title} onClick={() => setModal(!modal)} />
         {isClientReal === true ? <h1 className={styles.titleClientreal}>Cliente real</h1> : <h1 className={styles.titlePersonalProject}>Projeto pessoal</h1>}
       </button>
-      {modal && <ProjectModal
-        setModal={setModal}
-        title={title}
-        titlePath={titlePath}
-        gitHubPath={gitHubPath}
-        netlifyPath={netlifyPath}
-        text={text}
-        inConstruction={inConstruction}
-        photos={photos}
-        googleStatusImg={googleStatusImg}
-      />}
+      {modal && (
+        <div className={`modalOverlay ${styles.modalOverlay}`}>
+          <div className={styles.modal}>
+            <ProjectModal
+              setModal={setModal}
+              title={title}
+              titlePath={titlePath}
+              gitHubPath={gitHubPath}
+              netlifyPath={netlifyPath}
+              text={text}
+              inConstruction={inConstruction}
+              photos={photos}
+              googleStatusImg={googleStatusImg}
+            />
+          </div>
+        </div>
+      )}
     </>
-  )
+  );
 }
 
-export default ProjectBox
+export default ProjectBox;

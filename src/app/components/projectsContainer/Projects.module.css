@@ -1,12 +1,18 @@
-.projectsSection{
+.projectsSection {
     width: 100%;
     height: fit-content;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   box-shadow: 0 2px 5px black;
-   background-color: #20203A;
-   padding: 1rem;
-   flex-wrap: wrap;
-   position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 2px 5px black;
+    background-color: #20203A;
+    padding: 1rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+@media screen and (max-width:650px) {
+    .projectsSection {
+    
+    }
 }

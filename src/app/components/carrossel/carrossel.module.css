@@ -1,5 +1,5 @@
 .carrosselContainer {
-    min-width: 150%;
+    min-width: 140%;
     overflow:hidden;
     display: flex;
     justify-content: center;
@@ -20,4 +20,12 @@
     border-radius: 12px;
     cursor: grab;
     box-shadow: 1px 1px 5px grey;
+}
+
+@media screen and (max-width:650px) {
+    .carrosselContainer{
+        min-width: 120%;
+        gap: 8px;
+    }
+
 }

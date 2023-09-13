@@ -40,17 +40,17 @@ export default function Home() {
               <ul className={styles.linkContainer}>
                 <li>
                   <a href='https://github.com/FilipeSall' target='_blank'>
-                    <AiFillGithub fill={fillIcon} size={sizeIcon} />
+                    <AiFillGithub fill={fillIcon} size={sizeIcon} className={styles.meetingIcon} />
                   </a>
                 </li>
                 <li>
                   <a href='https://www.linkedin.com/in/filipe-salles-69aa38163/' target='_blank'>
-                    <AiFillLinkedin fill={fillIcon} size={sizeIcon} />
+                    <AiFillLinkedin fill={fillIcon} size={sizeIcon}  className={styles.meetingIcon}/>
                   </a>
                 </li>
                 <li>
                   <a href='/resume.pdf' download>
-                    <AiOutlineFilePdf fill={fillIcon} size={sizeIcon} />
+                    <AiOutlineFilePdf fill={fillIcon} size={sizeIcon} className={styles.meetingIcon} />
                   </a>
                 </li>
               </ul>

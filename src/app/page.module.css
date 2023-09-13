@@ -103,33 +103,56 @@
 
 @media screen and (max-width:650px) {
   .main {
-    line-height: normal;
+    line-height: 1px;
     position: relative;
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.70rem;
+    text-align: left ;
+    padding: 12px;
   }
   .title{
-    line-height: 0.40;
-    margin-bottom: 12px;
+    line-height: 0.10;
+    text-align: left;
   }
 
   .meetingText{
-    font-size: 1.2rem;
-  
+    font-size: 1rem;
+    margin-bottom: -4px;
+    margin-left: 2px;
   }
 
   .leavingText{
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 2px;
   }
 
-  .reactLine {
-    flex-direction: column;
-  }
 
   .linkContainer{
-    position: absolute;
-    top: 10% ;
     font-size: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
- 
+
+  .linkContainer > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+  }
+
+  .nextBtn{
+    width: 20%;
+    height: 10vh;
+    left: 40%;
+    bottom: 15%;
+  }
+  
+  .meetingIcon{
+    width: 40px;
+  }
 }
