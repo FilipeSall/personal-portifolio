@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Projects.module.css';
 import ProjectBox from '../projectBox/ProjectBox';
-import projects from './ProjectsList';
+import projects from './ProjectList';
 
 function Projects() {
 
