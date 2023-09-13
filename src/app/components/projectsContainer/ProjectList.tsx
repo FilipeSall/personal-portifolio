@@ -5,8 +5,8 @@ import initialPhoto from '../../../../public/linktaskweather/initialphoto.webp'
 
 import initialPhotoOpus from '../../../../public/opusproject/initialPhoto.webp';
 import googleStatusImgOpus from '../../../../public/opusproject/googleStatusImg.webp';
-import opusimg1 from '../../../../public/opusproject/opusimg1.webp';
-import opusimg2 from '../../../../public/opusproject/opusimg2.webp';
+import opusimg1 from '../../../../public/opusproject/opusimg2.webp';
+import opusimg2 from '../../../../public/opusproject/opusimg1.webp';
 import opusimg3 from '../../../../public/opusproject/opusimg3.webp';
 import opusimg4 from '../../../../public/opusproject/opusimg4.webp';
 
