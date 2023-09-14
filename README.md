@@ -1,6 +1,6 @@
 # Meu site portifólio pessoal
 
-https://personal-portifolio-optj.vercel.app/
+* https://personal-portifolio-optj.vercel.app/
 
 ![Screen Shot 2023-09-14 at 17 44 46](https://github.com/FilipeSall/personal-portifolio/assets/86988795/5e7b6f75-ffb6-4250-9c6f-a2c788f452d3)
 
