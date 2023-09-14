@@ -6,7 +6,6 @@
 
 # 👋 Olá, sou Filipe Reges de Salles!
 
-![Filipe's Banner](link_para_uma_imagem_banner.jpg)
 
 Seja bem-vindo ao meu repositório pessoal, onde você encontrará uma coleção dos meus projetos incríveis! 😎
 
