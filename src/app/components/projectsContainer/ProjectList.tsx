@@ -38,7 +38,7 @@ const projects = [
     initialPhoto:initialPhoto,
     titlePath:'https://link-task-weather.vercel.app/',
     gitHubPath:'https://github.com/FilipeSall/LinkTaskWeather',
-    netlifyPath:'links-task-weather.netlify.app',
+    netlifyPath:'https://links-task-weather.netlify.app/',
     text: `Criei um site para simplificar minha vida acadêmica. Meu objetivo é fornecer uma plataforma eficiente para transcrever e organizar todas as minhas anotações de estudo de forma simples e intuitiva. Criei um calendário interativo que construí do zero. Esse calendário inclui todos os feriados sazonais mais importantes do ano. Além disso, implementei um componente de clima que utiliza uma API interativa para fornecer informações atualizadas sobre o clima em sua localização. A melhor parte é que a animação do componente muda de acordo com as condições climáticas em tempo real.`,
     inConstruction:true,
   },
