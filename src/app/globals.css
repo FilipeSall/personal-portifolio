@@ -1,16 +1,19 @@
 @font-face {
   font-family: 'roboto';
   src: url(../../public/fonts/Roboto-Regular.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'open sans';
   src: url(../../public/fonts/OpenSans_Condensed-Regular.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family:'face';
   src: url(../../public/fonts/PlayfairDisplay-Regular.ttf);
+  font-display: swap;
 }
 
 *{

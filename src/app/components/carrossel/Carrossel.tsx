@@ -23,7 +23,7 @@ function Carrossel({ photos }: CarrosselPropsTypes) {
       whileTap={{ cursor: "grabbing" }}
       drag="x"
       ref={carousel}
-      dragConstraints={{ right: 300, left: -width }}
+      dragConstraints={{ right: 300, left: -width - 300 }}
       initial={{x:0}}
       animate={{x:200}}
       transition={{duration:0.8}}
