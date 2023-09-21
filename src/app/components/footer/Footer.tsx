@@ -12,7 +12,7 @@ function Footer() {
                 <a href='tel:+5561998272992' target='___blank'> <AiFillPhone alt='fazer ligação diretamente' className={styles.footerIcon} fill='#EDF5FC' size={38} /> </a>
             </div>
             <div className={styles.infoTextWrapper}>
-                    <p>(61)99827-2992</p>
+                    <p>(61) 99827-2992</p>
                     <p>Filipesallesdev@gmail.com</p>
                 </div>  
         </footer>
