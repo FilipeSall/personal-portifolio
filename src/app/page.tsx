@@ -7,6 +7,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiTypescript } from "react-icons/si";
 import { useEffect, useState } from 'react';
 import Projects from './components/projectsContainer/Projects';
+import Footer from './components/footer/Footer';
 
 const languages = ['REACTJS', 'NEXTJS', 'JAVASCRIPT', 'NODEJS', 'TYPESCRIPT'];
 
@@ -70,12 +71,13 @@ export default function Home() {
               <SiTypescript fill='#3178C6' className={styles.changing_word} size={30} />
             )}
           </span></p>
-          <a href='#projects' className={styles.nextBtn}><AiOutlineDown fill={'#c31432'} /></a>
+          <a href='#projects' className={styles.nextBtn}><AiOutlineDown fill={'#c31432'}  alt='ir para a secção de projetos.' /></a>
         </div>
       </main>
       <div className={styles.projectsContainer}>
         <Projects />
       </div>
+      <Footer />
     </>
   )
 }
