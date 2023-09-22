@@ -54,6 +54,10 @@
 
 @media screen and (max-width:650px) {
     .contactWrapper{
-        position: static;
+        width: 30%;
+    }
+
+    .infoTextWrapper{
+        font-size: 1rem;
     }
 }
