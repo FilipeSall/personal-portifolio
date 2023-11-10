@@ -77,7 +77,7 @@ export default function Home() {
       <div className={styles.projectsContainer}>
         <Projects />
       </div>
-      <Footer />
+    
     </>
   )
 }
